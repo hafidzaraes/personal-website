@@ -1,9 +1,44 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	font-weight: bold;
+	font-style: oblique;
 }
 
-a:any-link {
-    text-decoration: none;
-    color: black;
+.container {
+	width: 860px;
+	margin-top: 250px;
+	margin-left: 250px;	
 }
 
+.logo {
+	width: 200px;
+	height: 50px;
+	background-image: url(/Assets/logo1.png);
+	-webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.logo:hover {
+	background-image: url(/Assets/logo0.gif);
+}
+
+.navigation nav a {
+	
+	display: block;
+	width: fit-content;
+	padding: 1.5px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	color: inherit;
+	text-decoration: none;
+	transition: .25s ease-in-out;
+	
+}
+
+.navigation nav a:hover {
+	color: white;
+	background-color: black;
+}
